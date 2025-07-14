@@ -37,7 +37,8 @@ AskTube AI is a powerful voice-enabled, multilingual web application that allows
 
 1. **User inputs a YouTube video link**
 2. **Transcript** is fetched:
-   - tries English
+   - Extracts English captions from the YouTube video
+   - Shows warning if English transcript is too short or not available
 3. **Transcript is embedded** using NVIDIA QA model
 4. Based on the user action:
    - Ask question → relevant transcript chunks are retrieved → sent to NVIDIA LLM → response generated
